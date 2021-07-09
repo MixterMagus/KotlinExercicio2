@@ -7,6 +7,9 @@ fun main(){
         println("$it - ${it.description}")
     }
 
-    val clientOne = ClientType.PF
-    println("${clientOne.description}")
+    var clientOne = ClientType.PF
+    println("${clientOne.description} ${clientOne.changeable}")
+    clientOne.changeable="lulu"
+    println("${clientOne.description} ${clientOne.changeable}")
+
 }

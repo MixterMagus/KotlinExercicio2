@@ -1,12 +1,9 @@
 package Program
 
+import java.math.BigDecimal
+
 fun main(){
     println("Hello word")
-    var salomao = Pessoa()
-    println(salomao.getInformation())
-    salomao.setName("lululululul")
-    salomao.setCPF(89569856321)
-    println(salomao.getInformation())
-    println(salomao.getFullInformation())
-    println(salomao)
+    var salomao = Pessoa("lulu","12345644641")
+    var joao = Employee("Jãum","45645465", BigDecimal.valueOf(2000.0))
 }
